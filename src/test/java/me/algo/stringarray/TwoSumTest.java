@@ -1,15 +1,12 @@
 package me.algo.stringarray;
 
+import me.algo.util.PrintUtil;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 class TwoSumTest {
-
 
     @Test
     @DisplayName("TwoSum 테스트")
@@ -25,10 +22,7 @@ class TwoSumTest {
         // then
         assertThat(result).containsExactly(1, 3);
 
-        String collect = Arrays.stream(result)
-                .mapToObj(String::valueOf)
-                .collect(Collectors.joining(", "));
-        System.out.println(collect);
+        PrintUtil.print(result);
     }
 
 }
