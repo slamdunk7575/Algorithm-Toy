@@ -1,4 +1,4 @@
-package me.algo.stringarray;
+package me.algo.string;
 
 import java.util.*;
 
@@ -33,5 +33,3 @@ public class MeetingRooms2 {
     }
 
 }
-
-

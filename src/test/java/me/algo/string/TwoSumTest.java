@@ -1,4 +1,4 @@
-package me.algo.stringarray;
+package me.algo.string;
 
 import me.algo.util.PrintUtil;
 import org.junit.jupiter.api.DisplayName;

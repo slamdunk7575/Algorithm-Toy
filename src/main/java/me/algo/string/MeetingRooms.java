@@ -1,4 +1,4 @@
-package me.algo.stringarray;
+package me.algo.string;
 
 import java.util.Arrays;
 import java.util.Comparator;

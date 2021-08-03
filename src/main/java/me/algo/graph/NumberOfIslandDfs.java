@@ -30,7 +30,7 @@ public class NumberOfIslandDfs {
         return count;
     }
 
-    private void dfs(char[][] grid, int i, int j) {
+    private void  dfs(char[][] grid, int i, int j) {
 
         int m = grid.length;
         int n = grid[0].length;
