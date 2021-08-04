@@ -14,7 +14,8 @@ class UniqueEmailAddressTest {
         String[] emails = {
                 "test.email+james@coding.com",
                 "test.e.mail+toto.jane@cod.ing.com",
-                "testemail+tom@cod.ing.com"
+                "testemail+tom@cod.ing.com",
+                "a@coding.com"
         };
 
         UniqueEmailAddress uniqueEmailAddress = new UniqueEmailAddress();
@@ -23,7 +24,7 @@ class UniqueEmailAddressTest {
         int emailCount = uniqueEmailAddress.solve1(emails);
 
         // then
-        assertThat(emailCount).isEqualTo(2);
+        assertThat(emailCount).isEqualTo(3);
     }
 
 }

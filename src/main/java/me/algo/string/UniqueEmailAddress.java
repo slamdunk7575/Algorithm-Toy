@@ -12,19 +12,6 @@ import java.util.Set;
  */
 public class UniqueEmailAddress {
 
-    public static void main(String[] args) {
-        UniqueEmailAddress uea = new UniqueEmailAddress();
-
-        String[] emails = {
-                "test.email+james@coding.com",
-                "test.e.mail+toto.jane@cod.ing.com",
-                "testemail+tom@cod.ing.com"
-        };
-
-        System.out.println(uea.solve1(emails));
-
-    }
-
     public int solve1(String[] emails) {
         // 1. Data Structure
         Set<String> uniqueEmails = new HashSet<>();
@@ -67,5 +54,22 @@ public class UniqueEmailAddress {
 
     private String makeDomainName(String email) {
         return email.substring(email.indexOf("@") + 1);
+    }
+
+    public int solve2(String[] emails) {
+        // 1. Data Structure
+        Set<String> uniqueEmails = new HashSet<>();
+
+        // 2. for, while
+        for (String email : emails) {
+            StringBuilder sb = new StringBuilder();
+            String[] parts = email.split("@");
+            String[] localName = parts[0].split("\\+");
+            uniqueEmails.add(sb.append(localName[0].replace(".", ""))
+                    .append("@")
+                    .append(parts[1]).toString());
+        }
+
+        return uniqueEmails.size();
     }
 }
