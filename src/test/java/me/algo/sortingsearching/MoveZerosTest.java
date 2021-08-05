@@ -1,4 +1,4 @@
-package me.algo.string;
+package me.algo.sortingsearching;
 
 import me.algo.util.PrintUtil;
 import org.junit.jupiter.api.DisplayName;

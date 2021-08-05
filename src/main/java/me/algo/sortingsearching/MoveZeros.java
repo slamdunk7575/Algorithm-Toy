@@ -1,4 +1,4 @@
-package me.algo.string;
+package me.algo.sortingsearching;
 
 public class MoveZeros {
 
