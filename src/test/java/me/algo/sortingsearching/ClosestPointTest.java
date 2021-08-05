@@ -3,6 +3,7 @@ package me.algo.sortingsearching;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static me.algo.util.PrintUtil.print;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class ClosestPointTest {
@@ -19,7 +20,7 @@ class ClosestPointTest {
 
         // when
         int[][] result = closestPoint.solve(points, k);
-        closestPoint.print(result);
+        print(result);
 
         // then
         // assertThat(result).containsExactly(new int[]{-2, 2});

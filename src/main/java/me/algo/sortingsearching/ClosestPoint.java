@@ -41,20 +41,4 @@ public class ClosestPoint {
 
         return result;
     }
-
-    public void print(int[][] result) {
-        Arrays.stream(result)
-                .flatMapToInt(arr -> Arrays.stream(arr))
-                .forEach(System.out::println);
-
-        /*int m = result.length;
-        int n = result[0].length;
-
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                System.out.print("[" + i + "]" + "[" + j + "]: " + result[i][j] + " ");
-            }
-            System.out.println();
-        }*/
-    }
 }
