@@ -11,7 +11,7 @@ import java.util.Queue;
  *
  * 시간 복잡도: O(Nlogk)
  * 대상: int[] nums, int k
- * 이유: 배열의 갯수 n * 우선순위 logk
+ * 이유: 배열의 갯수 n * 우선순위 큐 logk
  *
  * 공간 복잡도: O(k)
  * 이유: 우선순위 큐 minHeap에서 최상단 k개 만큼만 유지하기 때문
