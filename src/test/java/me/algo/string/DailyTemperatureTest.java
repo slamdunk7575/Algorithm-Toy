@@ -19,7 +19,7 @@ class DailyTemperatureTest {
         int[] result = dailyTemperature.solve(nums);
 
         // then
-        PrintUtil. print(result);
+        PrintUtil.print(result);
         assertThat(result).containsExactly(1, 1, 4, 2, 1, 1, 0, 0);
     }
 
