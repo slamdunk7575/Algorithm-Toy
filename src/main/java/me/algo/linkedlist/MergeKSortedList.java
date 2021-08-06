@@ -7,9 +7,9 @@ public class MergeKSortedList {
 
     public ListNode solve(ListNode[] listNodes) {
         // 1. 담을 그릇 정하기
-        PriorityQueue<ListNode> queue = new PriorityQueue<ListNode>(comp);
+        PriorityQueue<ListNode> queue = new PriorityQueue<>(comp);
         ListNode newHead = new ListNode(0);
-        ListNode point = newHead;
+        ListNode result = newHead;
 
         for (ListNode node : listNodes) {
             if(node != null) {
@@ -20,8 +20,8 @@ public class MergeKSortedList {
         // 2. while
         while (!queue.isEmpty()) {
             ListNode node = queue.poll();
-            point.next = node;
-            point = point.next;
+            result.next = node;
+            result = result.next;
 
             if(node.next != null) {
                 queue.offer(node.next);

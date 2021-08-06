@@ -1,5 +1,6 @@
-package me.algo.stackqueue;
+package me.algo.queuestack;
 
+import me.algo.queuestack.BaseballGame;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

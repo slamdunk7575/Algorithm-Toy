@@ -1,4 +1,4 @@
-package me.algo.linkedlist;
+package me.algo.queuestack;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package me.algo.linkedlist;
+package me.algo.queuestack;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
