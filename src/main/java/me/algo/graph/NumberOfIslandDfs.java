@@ -2,6 +2,18 @@ package me.algo.graph;
 
 import java.util.Objects;
 
+/**
+ * (정리)
+ *
+ * 시간복잡도: O(m*n)
+ * - 대상: char[][] grid
+ * - 이유: 이중 for문인데 m과 n이 다른 경우 (예: DFS, BFS)
+ *
+ * 공간복잡도: O(m*n)) (Worst Case -> 모두 '1'인 경우)
+ * - 대상: 내부 Stack 생성
+ * - 이유: 재귀호출이 곧 Stack
+ *
+ */
 public class NumberOfIslandDfs {
 
     public int solve(char[][] grid) {
