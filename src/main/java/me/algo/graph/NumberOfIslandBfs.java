@@ -4,6 +4,17 @@ import java.util.LinkedList;
 import java.util.Objects;
 import java.util.Queue;
 
+/**
+ * (정리)
+ *
+ * 시간복잡도: O(m*n)
+ * - 대상: char[][] grid
+ * - 이유: 이중 for문인데 m과 n이 다른 경우 (예: DFS, BFS)
+ *
+ * 공간복잡도: O(min(m, n))
+ * - 대상: Queue<int[]> queue = new LinkedList<>()
+ * - 이유: 큐에 좌표값을 저장하고 빼면서 계산 -> 따라서, O(min(m, n)), O(max(m, n)) 중 하나임
+ */
 public class NumberOfIslandBfs {
 
     public int solve(char[][] grid) {
@@ -36,7 +47,7 @@ public class NumberOfIslandBfs {
 
     private void bfs(char[][] grid, int x, int y) {
         Queue<int[]> queue = new LinkedList<>();
-        queue.offer(new int[] {x, y});
+        queue.offer(new int[] {x, y}); // 0, 0 (시작 좌표)
         // direction 사방으로 탐색
         while (!queue.isEmpty()) {
             int size = queue.size();

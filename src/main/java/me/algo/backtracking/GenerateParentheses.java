@@ -16,6 +16,7 @@ public class GenerateParentheses {
         count++;
         System.out.println("str\t" + str + "\t left: " + left + "\t right: " + right + "\t count: " + count + "\t str1: " + str1);
 
+        // 제약조건: left 를 빼면서 진행하기 때문에 right 보다 클 수가 없다.
         if (left < 0 || left > right) {
             return;
         }
