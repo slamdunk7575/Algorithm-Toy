@@ -12,6 +12,7 @@ class LongestSubWithoutRepeatCharTest {
     void longest_sub_char_test() {
         // given
         String input = "pawwkea";
+        // String input = "abcabcd";
         LongestSubWithoutRepeatChar lswrc = new LongestSubWithoutRepeatChar();
 
         // when
