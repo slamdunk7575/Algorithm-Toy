@@ -16,7 +16,7 @@ public class MakingAnagrams {
             alphabet[c - 'a']--;
         }
 
-        // [-1, -1, 0, 1, 1, 0, 0, 0, 0, 0, 0 ...]
+        // 예: [-1, -1, 0, 1, 1, 0, 0, 0, 0, 0, 0 ...]
         for (int num : alphabet) {
             count += Math.abs(num);
         }
