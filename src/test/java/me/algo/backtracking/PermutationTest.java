@@ -23,7 +23,12 @@ class PermutationTest {
         System.out.println(result);
 
         // then
-        assertThat(result).contains(Arrays.asList(1, 2, 3));
+        assertThat(result).contains(Arrays.asList(1, 2, 3),
+                Arrays.asList(1, 3, 2),
+                Arrays.asList(2, 1, 3),
+                Arrays.asList(2, 3, 1),
+                Arrays.asList(3, 1, 2),
+                Arrays.asList(3, 2, 1));
     }
 
 }
