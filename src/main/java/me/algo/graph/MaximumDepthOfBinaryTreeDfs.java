@@ -3,7 +3,7 @@ package me.algo.graph;
 import java.util.Objects;
 import java.util.Stack;
 
-public class MaxDepthBinaryTreeDfs {
+public class MaximumDepthOfBinaryTreeDfs {
 
     public int solve(TreeNode root) {
 

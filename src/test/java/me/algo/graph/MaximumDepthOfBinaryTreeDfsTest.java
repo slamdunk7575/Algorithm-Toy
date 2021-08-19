@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class MaxDepthBinaryTreeDfsTest {
+class MaximumDepthOfBinaryTreeDfsTest {
 
     @DisplayName("MaxDepthBinaryTreeDfs 테스트")
     @Test
     void max_depth_binary_tree_dfs_test() {
         // given
-        MaxDepthBinaryTreeDfs maxDepthBinaryTreeDfs = new MaxDepthBinaryTreeDfs();
+        MaximumDepthOfBinaryTreeDfs maximumDepthBinaryTreeDfs = new MaximumDepthOfBinaryTreeDfs();
 
         TreeNode node = new TreeNode(1);
         node.left = new TreeNode(2);
@@ -21,7 +21,7 @@ class MaxDepthBinaryTreeDfsTest {
         node.left.left.left = new TreeNode(6);
 
         // when
-        int result = maxDepthBinaryTreeDfs.solve(node);
+        int result = maximumDepthBinaryTreeDfs.solve(node);
 
         // then
         assertThat(result).isEqualTo(4);
