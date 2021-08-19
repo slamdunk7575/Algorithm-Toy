@@ -21,7 +21,7 @@ class MaximumDepthOfBinaryTreeTest {
         tree.left.left.left = new TreeNode(7);
 
         // when
-        int solve = maximumDepthOfBinaryTree.solve(tree);
+        int solve = maximumDepthOfBinaryTree.maxDepth(tree);
 
         // then
         assertThat(solve).isEqualTo(4);
