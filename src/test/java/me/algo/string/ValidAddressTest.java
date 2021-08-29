@@ -17,7 +17,6 @@ class ValidAddressTest {
         List<String> ips = Arrays.asList("23.45.12.75", "0.12.34.56",
                 "2001:db8:0:0:0:ff00:42:8329", "0000:0000:0000:0000:0000:0000:0001", "::1",
                 "000.012.234.23", ".213.123.23.32", "23.45.22.32.");
-        // 1:22:333:4444 -> Neither 가 나오도록 수정이 필요
 
         ValidAddress validAddress = new ValidAddress();
 
