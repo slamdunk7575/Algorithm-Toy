@@ -10,7 +10,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class WordLadderTest {
 
-    @DisplayName("단어 사다리")
+    @DisplayName("단어 사다리(BeginWord를 바꾸면서 EndWord를 찾는 횟수)")
     @Test
     void word_ladder() {
         // given
