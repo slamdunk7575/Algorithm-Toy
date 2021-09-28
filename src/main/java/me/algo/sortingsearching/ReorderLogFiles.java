@@ -39,7 +39,7 @@ public class ReorderLogFiles {
                 // 첫번째 숫자, 두번째 문자 (자리 변경)
                 return 1;
             } else {
-                // 첫번째 문자, 두번째 숫자
+                // 첫번째 문자, 두번째 숫자 (오름차순)
                 return -1;
             }
 
