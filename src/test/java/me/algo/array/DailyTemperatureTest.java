@@ -17,7 +17,8 @@ class DailyTemperatureTest {
         int[] nums = { 73, 74, 75, 71, 69, 72, 76, 73 };
 
         // when
-        int[] result = dailyTemperature.solve(nums);
+        // int[] result = dailyTemperature.solve(nums);
+        int[] result = dailyTemperature.solveFor(nums);
 
         // then
         PrintUtil.print(result);

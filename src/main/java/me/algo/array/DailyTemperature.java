@@ -22,6 +22,34 @@ import java.util.Stack;
  */
 public class DailyTemperature {
 
+        public int[] solveFor(int[] temper) {
+            int len = temper.length;
+            int[] result = new int[len];
+            int count = 0;
+            int j;
+
+            for (int i = 0; i < len; i++) {
+                for (j = i + 1; j < len - 1; j++) {
+                    if (temper[i] < temper[j]) {
+                        count++;
+                        break;
+                    } else {
+                        count++;
+                    }
+                }
+
+                if (j == temper.length) {
+                    result[i] = 0;
+                } else {
+                    result[i] = count;
+                }
+
+                count = 0;
+            }
+
+            return result;
+        }
+
         public int[] solve(int[] temper) {
             // 1. 담을 그릇 정하기
             Stack<Integer> stack = new Stack<>();
