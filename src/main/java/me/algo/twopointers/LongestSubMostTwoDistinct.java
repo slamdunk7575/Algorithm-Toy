@@ -51,7 +51,7 @@ public class LongestSubMostTwoDistinct {
             }
 
             max = Math.max(max, right - left);
-            System.out.println("right: " + right + " left: " + (right - left));
+            System.out.println("right: " + right + " left: " + left + " right - left: " + (right - left));
         }
 
         return max;
