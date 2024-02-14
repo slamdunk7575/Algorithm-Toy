@@ -9,13 +9,19 @@ public class Ladder {
             answer[i] = (char)(65 + i);
         }
 
-        int layer = ladder.length;
+        /*int layer = ladder.length;
         for (int i = 0; i < layer; i++) {
             for (int j = 0; j < ladder[i].length; j++) {
                 int stick = ladder[i][j];
                 if (stick != 0) {
                     swap(stick, answer);
                 }
+            }
+        }*/
+
+        for (int[] line : ladder) {
+            for (int value : line) {
+                swap(value, answer);
             }
         }
 
