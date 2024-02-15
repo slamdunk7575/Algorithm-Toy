@@ -10,6 +10,7 @@ public class FirstCharacter {
             return -1;
         }
 
+        // 각 문자 빈도수 해싱
         HashMap<String, Integer> characterCountMap = new HashMap<>();
         String[] splitInput = input.split("");
 
