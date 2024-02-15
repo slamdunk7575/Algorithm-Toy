@@ -1,12 +1,10 @@
 package me.algo.hashing;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class FirstCharacter {
 
     public int solution(String input) {
-        int answer = 0;
 
         if (input.length() == 0) {
             return -1;
@@ -16,29 +14,16 @@ public class FirstCharacter {
         String[] splitInput = input.split("");
 
         for (String str : splitInput) {
-            if (!characterCountMap.containsKey(str)) {
-                characterCountMap.put(str, 1);
-                continue;
-            }
-            characterCountMap.put(str, characterCountMap.get(str) + 1);
+            characterCountMap.put(str, characterCountMap.getOrDefault(str, 0) + 1);
         }
 
-        for (Map.Entry<String, Integer> elem : characterCountMap.entrySet()) {
-            if (elem.getValue() == 1) {
-                for (int i = 0; i < splitInput.length; i++) {
-
-                    if (answer != 0) {
-                        break;
-                    }
-
-                    if (splitInput[i].equals(elem.getKey())) {
-                        answer = i + 1;
-                    }
-                }
+        for (int i = 0; i < splitInput.length; i++) {
+            if (characterCountMap.get(splitInput[i]) == 1) {
+                return i + 1;
             }
         }
 
-        return answer;
+        return -1;
     }
 
     public static void main(String[] args){
