@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class MaximumLengthSequence {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         MaximumLengthSequence maximumLengthSequence = new MaximumLengthSequence();
         System.out.println(maximumLengthSequence.solution(new int[]{8, 1, 9, 3, 10, 2, 4, 0, 2, 3}));
         System.out.println(maximumLengthSequence.solution(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 0, 0, 0, 0}));
@@ -22,6 +22,20 @@ public class MaximumLengthSequence {
                 .collect(Collectors.toSet());
 
         for (Integer num : inputs) {
+            if (inputs.contains(num - 1)) {
+                continue;
+            }
+
+            int newAnswer = 0;
+            while (inputs.contains(num)) {
+                newAnswer++;
+                num++;
+            }
+
+            answer = Math.max(answer, newAnswer);
+        }
+
+        /*for (Integer num : inputs) {
 
             List<Integer> result = new ArrayList<>();
 
@@ -45,7 +59,7 @@ public class MaximumLengthSequence {
                     answer = newAnswer;
                 }
             }
-        }
+        }*/
 
         return answer;
     }
