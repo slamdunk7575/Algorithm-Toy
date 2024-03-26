@@ -1,4 +1,4 @@
-package me.algo.list;
+package me.algo.set;
 
 import java.util.*;
 import java.util.stream.Collectors;
