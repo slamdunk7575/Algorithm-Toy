@@ -22,10 +22,11 @@ public class SinkingTitanic {
             if (numbers.get(leftPoint) + numbers.get(rightPoint) <= m) {
                 leftPoint++;
                 rightPoint--;
+                answer++;
             } else {
                 rightPoint--;
+                answer++;
             }
-            answer++;
         }
 
         return answer;
