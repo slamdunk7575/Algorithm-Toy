@@ -11,8 +11,8 @@ public class Permutation {
     private static int[] pm;
     private static int[] check;
 
-    public void dfs(int l) {
-        if (l == m) {
+    public void dfs(int depth) {
+        if (depth == m) {
             for (int value : pm) {
                 System.out.print(value + " ");
             }
@@ -21,8 +21,8 @@ public class Permutation {
             for (int i = 0; i < n; i++) {
                 if (check[i] == 0) {
                     check[i] = 1;
-                    pm[l] = arr[i];
-                    dfs(l + 1);
+                    pm[depth] = arr[i];
+                    dfs(depth + 1);
                     check[i] = 0;
                 }
             }
