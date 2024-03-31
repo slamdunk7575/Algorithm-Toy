@@ -1,4 +1,4 @@
-package me.algo.graph;
+package me.algo.bfs;
 
 import java.util.LinkedList;
 import java.util.Queue;

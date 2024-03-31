@@ -1,4 +1,4 @@
-package me.algo.graph;
+package me.algo.dfs;
 
 import java.util.Scanner;
 
