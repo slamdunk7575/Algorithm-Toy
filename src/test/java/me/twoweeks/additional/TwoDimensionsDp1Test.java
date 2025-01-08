@@ -1,11 +1,11 @@
-package me.twoweeks.other;
+package me.twoweeks.additional;
 
-import me.twoweeks.other.TwoDimensionsDp;
+import me.twoweeks.additional.dp.TwoDimensionsDp1;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class TwoDimensionsDpTest {
+class TwoDimensionsDp1Test {
 
     @Test
     void tow_dimensions_dp() {
@@ -17,13 +17,13 @@ class TwoDimensionsDpTest {
         int[][] moveMap = {{14, 9, 12, 10}, {1, 11, 5, 4}, {7, 15, 2, 13}, {6, 3, 16, 8}};
         int[][] dp = new int[count][count];
 
-        TwoDimensionsDp twoDimensionsDp = new TwoDimensionsDp();
+        TwoDimensionsDp1 twoDimensionsDp1 = new TwoDimensionsDp1();
 
         // when
         int result = 0;
         for (int i = 0; i < count; i++) {
             for (int j = 0; j < count; j++) {
-                result = Math.max(result, twoDimensionsDp.recur(i, j, moveX, moveY, count, moveMap, dp));
+                result = Math.max(result, twoDimensionsDp1.recur(i, j, moveX, moveY, count, moveMap, dp));
                 System.out.println(i + " " + j + " " + result);
             }
         }

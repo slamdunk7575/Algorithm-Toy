@@ -1,10 +1,10 @@
-package me.twoweeks.other;
+package me.twoweeks.additional.dp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class TwoDimensionsDp {
+public class TwoDimensionsDp1 {
 
     private static int count;
     private static int[][] moveMap;
