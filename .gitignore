@@ -3,3 +3,4 @@
 build/
 out/
 src/main/java/me/cote/
+src/test/java/me/cote/
