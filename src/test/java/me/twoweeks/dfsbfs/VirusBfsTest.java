@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class VirusDfsTest {
+class VirusBfsTest {
 
     @Test
     void virus_dfs() {
@@ -21,8 +21,8 @@ class VirusDfsTest {
         };
 
         // when
-        VirusDfs virusDfs = new VirusDfs();
-        int result = virusDfs.solve(count, graphCount, graph);
+        VirusBfs virusBfs = new VirusBfs();
+        int result = virusBfs.solve(count, graphCount, graph);
 
         // then
         assertThat(result).isEqualTo(4);

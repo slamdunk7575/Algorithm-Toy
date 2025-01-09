@@ -1,8 +1,10 @@
 package me.twoweeks.dfsbfs;
 
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
-public class VirusDfs {
+public class VirusBfs {
 
     public int solve(int count, int graphCount, int[][] graph) {
 
@@ -16,6 +18,9 @@ public class VirusDfs {
         }
 
         Map<Integer, Integer> visited = new HashMap<>();
+        visited = IntStream.rangeClosed(1, 7)
+                .boxed()
+                .collect(Collectors.toMap(key -> key, value -> 0));
 
         Deque<Integer> queue = new ArrayDeque<>();
         queue.add(1);
@@ -26,7 +31,7 @@ public class VirusDfs {
 
             List<Integer> connections = graphMap.get(k);
             for (Integer connection : connections) {
-                if (visited.get(connection) == null) {
+                if (visited.get(connection) == 0) {
                     queue.add(connection);
                 }
             }
